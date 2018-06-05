@@ -9,6 +9,11 @@ public class enum_example {
 		winter
 	}
 	
+	final static int SPRING = 1;
+	final static int SUMMER = 2;
+	final static int AUTUMN = 3;
+	final static int WINTER = 4;
+	
 	/* About enum
 	 * 
 	 * Yes, it's true to use final int to have slightly ~1.5% of performance boost,
