@@ -14,8 +14,6 @@ import java.io.FileInputStream;
  * Cuz it generally toke > 1 byte to store word. 
  * (EX: big5 -> double bytes, UTF-8 -> 1-4 bytes)
  * 
- * @author andykwok
- *
  */
 public class ByteProcess {
 	
