@@ -1,0 +1,9 @@
+#Ignore stuff that is not needed
+.classpath
+.gradle
+.idea
+.settings
+bin
+.project
+pom.xml
+target
