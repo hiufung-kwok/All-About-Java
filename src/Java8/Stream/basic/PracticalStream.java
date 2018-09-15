@@ -38,7 +38,7 @@ public class PracticalStream {
 //        Close range, exclude the last one (1, 1000)
         IntStream.range(1, 1000);
 //        As arr
-        int arr = IntStream.range(0, 500).toArray();
+        int[] arr = IntStream.range(0, 500).toArray();
 
 //        Keep produce number from arg0 and transform by arg1 (Infinite stream)
         IntStream.iterate(0, i -> i+2);
