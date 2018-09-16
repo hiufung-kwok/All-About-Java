@@ -22,9 +22,25 @@ public class ToString {
         print(String.valueOf(sum)  , Objects.toString(sum) );
 //        valueOf(null) Would cause a null pointer exception but Objects.toString dun.
 //        String.valueOf(null)
-        
+
 //      But Objects.toString( ) don't.
         System.out.println(Objects.toString(null) );
+
+
+//      Usual approach
+        String imnull = null;
+
+//      Should perform null check first
+//      However most ppl dun and nullpointerException would just throw.
+        if (imnull != null){
+            System.out.println(imnull.toString());
+        }
+//      One quick fix
+//      Would return a String constant "null" in worst case.
+        Objects.toString(imnull);
+
+
+
 
     }
 }
