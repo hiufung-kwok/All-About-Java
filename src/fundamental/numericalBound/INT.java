@@ -1,4 +1,4 @@
-package src.fundamental.numericalBound;
+package fundamental.numericalBound;
 
 public class INT {
 	public static void main(String[] args) {
