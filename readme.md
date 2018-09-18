@@ -21,3 +21,8 @@ in certain concept let say concurrent programming and start to learn:
 * [Fundamental](./src/fundamental):   
     Base code that u would be writting day after day. It's a good entry point 
     for those who are interested in Java. 
+    
+    
+    
+Book Ref:
+ * Effective Java, 3rd Edition (Joshua Bloch)
