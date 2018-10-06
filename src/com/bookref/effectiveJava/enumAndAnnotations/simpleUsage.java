@@ -43,9 +43,26 @@ public class simpleUsage {
 
         HALF {public double apply(double x){return x/2;}};
 
-
-
         public abstract double apply(double x);
+
+    }
+
+
+    /**
+     * Enum with Str constructor and abstract method
+     */
+    public enum Interface {
+
+//      The order does matter Implementation > Abstract
+        REC("rec"){public double apply(double x, double y) { return x / y; } };
+
+//        Member var
+        private final String cmd;
+//      Constructor
+        Interface (String cmd) { this.cmd = cmd;}
+//        Method declaration (abstract)
+        public abstract double apply(double x, double y);
+
 
 
     }
