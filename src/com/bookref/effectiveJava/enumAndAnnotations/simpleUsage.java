@@ -63,11 +63,20 @@ public class simpleUsage {
 //        Method declaration (abstract)
         public abstract double apply(double x, double y);
 
-
-
     }
 
 
+    /**
+     * valueOf (String) is override by default
+     */
+    public enum Day{
+        Weekend, Weekday;
+
+
+    };
+
+
+//    TBC: Strategy enum type.
 
 
     public static void main(String[] args) {
@@ -91,6 +100,11 @@ public class simpleUsage {
         double item = 10;
 //        Result == 5
         double result = Method.HALF.apply(item);
+
+        Day day = Day.valueOf("Weekend");
+//      The int representation undernerth
+        int re = day.ordinal();
+
 
 
     }
