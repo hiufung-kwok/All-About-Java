@@ -6,7 +6,7 @@ package com.bookref.effectiveJava.methods;
  * which may not be desire by author.
  */
 public class OneOrMorePara {
-    
+
     /**
      * Better way, always make sure it have at least one para.
      * @param first
