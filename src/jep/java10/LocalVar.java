@@ -27,7 +27,7 @@ public class LocalVar {
          * However this feature will only work for concrete variable assignment,
          * and in the real world, it's not uncommon to see the following.
          *
-         * In this case `var` is not appliable, because Java is a static type system
+         * In this case `var` is not applicable, because Java is a static type system
          * and JVM need to know the exact to perform type checking.
          *
          */
