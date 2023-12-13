@@ -38,7 +38,7 @@ public class jep329NewCryptoAlgo {
         // IV, initialization value with nonce
         IvParameterSpec iv = new IvParameterSpec(nonce);
         cipher.init(cipherNew.ENCRYPT_MODE, key, iv);
-        byte[] encryptedText = cipher.doFinal(pText);
+        byte[] encryptedTextNew = cipher.doFinal(pText);
     }
 
 }
