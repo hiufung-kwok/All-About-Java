@@ -13,6 +13,7 @@ public class jep325Switch {
 
         int day = 1;
 
+        // New switch allow multiple options and lambda-like expression.
         switch (day) {
             case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);
             case TUESDAY                -> System.out.println(7);
