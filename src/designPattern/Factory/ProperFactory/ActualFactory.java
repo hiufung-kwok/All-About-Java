@@ -1,6 +1,6 @@
-package designPattern.ProperFactory;
+package designPattern.Factory.ProperFactory;
 
-import designPattern.SimpleFactory.Food;
+import designPattern.Factory.SimpleFactory.Food;
 
 
 

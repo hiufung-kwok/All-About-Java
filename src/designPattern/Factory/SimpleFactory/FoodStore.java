@@ -1,4 +1,4 @@
-package designPattern.SimpleFactory;
+package designPattern.Factory.SimpleFactory;
 
 
 /**
@@ -16,17 +16,13 @@ package designPattern.SimpleFactory;
  *  for library user. Since the operation is encapsulated, modification wouldn't lead to breaking change, as 
  *  long as maintaining the same signature for outside to consume. A quick example may help to understand the 
  *  concept.
- *  
  *  Let's say spec have changed, from this point onward Jpese CUISINE not returing Sushi but Sake instead.
  *  under factory method, code can be quickly change on Food(JPese) section to print out Sake. Which is not
  *  breaking change and as the signaure stay the same. End-user no need to alter code in order comply everyone happy.
- *  
  *  However fall into the case of normal Java Class. A JpeseFood is created to printout Sushi, but as the spec change.
  *  A new class need to be created for JpeseFoodSake in order to modify it's behavior.
  *  
- *  
- *  
- *  - Have it's own behavior
+ *  - Have its own behavior
  *  
  *  Also by one more level of encapsulation, extra code segment can be run exact before or after the constructor.
  *  Let's say you wanna to store the frequency of how often every classes is created throughout the whole life time.
