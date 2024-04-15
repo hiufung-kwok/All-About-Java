@@ -5,7 +5,7 @@ package concurrent.basic.thread;
  * Basic example to show how fit custom code into a Thread then execute it.
  *
  */
-public class ConstructThreads {
+public class ThreadExtendExample {
 
     static class MyThreadPrintTest extends Thread {
         @Override
@@ -28,6 +28,11 @@ public class ConstructThreads {
         Thread td = new MyThreadPrintTest();
         Thread td2 = new MyThreadAnotherPrintTest();
 
+        /**
+         * .start() is always the call to make despite run() is the call
+         * which be overridden.
+         * Ref: https://www.geeksforgeeks.org/start-function-multithreading-java/
+         */
         td.start();
         td2.start();
 

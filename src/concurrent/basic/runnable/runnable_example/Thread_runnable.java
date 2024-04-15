@@ -1,6 +1,6 @@
 package concurrent.basic.runnable.runnable_example;
 
-public class Thread_runable implements Runnable{
+public class Thread_runnable implements Runnable{
 
 	@Override
 	public void run() {

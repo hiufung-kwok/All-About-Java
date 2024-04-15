@@ -7,7 +7,7 @@ package concurrent.basic.runnable;
 public class HelloRunnable implements Runnable{
 
 	/**
-	 * Runnable by it self is not include a thread object. Can picture as instruction set of a thread.<br>
+	 * Runnable by itself is not include a thread object. Can picture as an instruction set of a thread.<br>
 	 * It told how a thread should be run, once any thread given chance for computing power (Execution time). <br>
 	 * It will run what's in the instruction set (Runnable.run).
 	 */
