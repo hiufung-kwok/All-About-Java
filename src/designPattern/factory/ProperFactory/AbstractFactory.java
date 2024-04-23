@@ -1,6 +1,6 @@
-package designPattern.Factory.ProperFactory;
+package designPattern.factory.ProperFactory;
 
-import designPattern.Factory.SimpleFactory.Food;
+import designPattern.factory.SimpleFactory.Food;
 
 public abstract class AbstractFactory {
 

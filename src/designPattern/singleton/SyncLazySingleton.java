@@ -1,4 +1,4 @@
-package designPattern.Singleton;
+package designPattern.singleton;
 
 public class SyncLazySingleton {
 

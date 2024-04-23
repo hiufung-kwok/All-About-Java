@@ -1,4 +1,4 @@
-package designPattern.Singleton;
+package designPattern.singleton;
 
 /**
  * Ref: https://juejin.cn/post/7337205293775061032

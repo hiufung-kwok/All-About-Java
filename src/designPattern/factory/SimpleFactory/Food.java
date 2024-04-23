@@ -1,4 +1,4 @@
-package designPattern.Factory.SimpleFactory;
+package designPattern.factory.SimpleFactory;
 
 public interface Food {
 	public void cookFood();
