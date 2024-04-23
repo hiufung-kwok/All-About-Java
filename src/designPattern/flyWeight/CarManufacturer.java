@@ -1,5 +1,8 @@
 package designPattern.flyWeight;
 
+/**
+ * No setter available, as FlyWeight object is immutable.
+ */
 public class CarManufacturer {
 
     private String name;
