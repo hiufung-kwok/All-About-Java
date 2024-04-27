@@ -1,14 +1,17 @@
-package concurrent.keyword;
+package concurrent.keyword.kvolatile;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * Similar but this time wrapped with AtomicInt, then it guarantee it always print 2000.
  * Ref: https://www.baeldung.com/java-volatile-variables-thread-safety
  */
-public class VolatileRace {
+public class VolatileAtomic {
 
-    static volatile int count = 0;
+    static AtomicInteger count = new AtomicInteger(0);
 
     static void increment() {
-        count++;
+        count.getAndIncrement();
     }
 
     public static void main(String[] args) throws InterruptedException {

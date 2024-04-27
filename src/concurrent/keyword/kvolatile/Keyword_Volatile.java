@@ -1,4 +1,4 @@
-package concurrent.keyword;
+package concurrent.keyword.kvolatile;
 
 /*
  * Volatile make sure runtime dun cache var value.
