@@ -1,4 +1,4 @@
-package concurrent.conceptual.Semaphores;
+package concurrent.conceptual.semaphores;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
