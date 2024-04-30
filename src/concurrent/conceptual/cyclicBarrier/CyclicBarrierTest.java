@@ -8,6 +8,10 @@ import java.util.concurrent.CyclicBarrier;
  * you want each thread to progress as fast as it can, however, sometime you
  * would like to have manual wait point, and only let thread to progress on the next stage when all
  * threads completed the current stage.
+ *
+ * The main difference is that CyclicBarrier need to wait for each other,
+ * but CountDownLatch is wait for a common goal, in the case of Count DownLatch
+ * what more important is the main thread.
  */
 public class CyclicBarrierTest {
 

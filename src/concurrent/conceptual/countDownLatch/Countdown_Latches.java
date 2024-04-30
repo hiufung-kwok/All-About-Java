@@ -3,9 +3,11 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-//Only launch when CountDownLatch count to 0.
-
-
+/**
+ * Only launch when CountDownLatch count to 0.
+ * One of the practical example is to wait for all services to be bootstrapped
+ * completely before announcing it as healthy state to receive traffic.
+ */
 class Countdown_Latches_Processor implements Runnable {
 
 	private CountDownLatch latch;
@@ -25,10 +27,10 @@ class Countdown_Latches_Processor implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
+		// It's a blocking call
 		latch.countDown();
 		System.out.println("Current count: " + latch.getCount());
-		
 		
 	}
 	
