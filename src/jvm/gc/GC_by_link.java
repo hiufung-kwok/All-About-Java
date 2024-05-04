@@ -6,7 +6,7 @@
  */
 
 
-package advanced.gc;
+package jvm.gc;
 
 public class GC_by_link {
 	
