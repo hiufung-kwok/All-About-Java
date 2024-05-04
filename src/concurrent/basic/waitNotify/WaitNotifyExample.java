@@ -1,5 +1,8 @@
 package concurrent.basic.waitNotify;
 
+/**
+ * In this case notifyAll( ) is required to make sure both Thread A and C to be aware.
+ */
 public class WaitNotifyExample {
     private static final Object lock = new Object();
     private static volatile boolean condition = false;
@@ -20,6 +23,20 @@ public class WaitNotifyExample {
             }
         });
 
+        Thread threadC = new Thread(() -> {
+            synchronized (lock) {
+                while (!condition) {
+                    try {
+                        System.out.println("Thread C is waiting...");
+                        lock.wait(); // Wait until condition is true
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                System.out.println("Thread C woke up and condition is true");
+            }
+        });
+
         // Thread B: sets the condition to true and notifies waiting threads
         Thread threadB = new Thread(() -> {
             synchronized (lock) {
@@ -32,12 +49,13 @@ public class WaitNotifyExample {
                 // Set the condition to true
                 condition = true;
                 System.out.println("Thread B sets the condition to true and notifies waiting threads");
-                lock.notify(); // Notify waiting threads
+                lock.notifyAll(); // Notify waiting threads
             }
         });
 
         // Start threads
         threadA.start();
         threadB.start();
+        threadC.start();
     }
 }
