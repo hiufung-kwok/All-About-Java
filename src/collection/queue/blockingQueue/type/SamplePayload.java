@@ -1,4 +1,4 @@
-package collection.queue.blockingQueue;
+package collection.queue.blockingQueue.type;
 
 import org.jetbrains.annotations.NotNull;
 

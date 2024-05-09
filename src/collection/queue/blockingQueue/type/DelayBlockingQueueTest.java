@@ -1,6 +1,5 @@
-package collection.queue.blockingQueue;
+package collection.queue.blockingQueue.type;
 
-import java.sql.SQLOutput;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;

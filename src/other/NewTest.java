@@ -1,12 +1,13 @@
 package other;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Stack;
 
 public class NewTest {
 
     public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<> ();
+
+
 
     }
 }

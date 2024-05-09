@@ -1,18 +1,17 @@
-package collection.queue.blockingQueue;
+package collection.queue.blockingQueue.type;
 
 import java.time.Duration;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.SynchronousQueue;
 
 /**
- * TBC
+ * Similar to blocking queue with capacity == 1.
  */
-public class LinkedBlockingQueueTest {
+public class SyncBlockingQueueTest {
 
     public static void main(String[] args) throws InterruptedException {
 
-        BlockingQueue bq = new LinkedBlockingQueue();
+        BlockingQueue bq = new SynchronousQueue();
 
         SampleProducer pd = new SampleProducer(bq);
         SampleConsumer cs = new SampleConsumer(bq);

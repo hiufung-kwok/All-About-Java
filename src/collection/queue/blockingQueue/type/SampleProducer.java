@@ -1,4 +1,4 @@
-package collection.queue.blockingQueue;
+package collection.queue.blockingQueue.type;
 
 import org.junit.jupiter.api.MethodOrderer;
 

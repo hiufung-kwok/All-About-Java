@@ -1,8 +1,7 @@
-package collection.queue.blockingQueue;
+package collection.queue.blockingQueue.type;
 
 import java.time.Duration;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 
 /**

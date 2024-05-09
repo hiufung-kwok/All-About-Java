@@ -1,4 +1,4 @@
-package collection.queue.blockingQueue;
+package collection.queue.blockingQueue.type;
 
 import java.time.Duration;
 import java.util.concurrent.ArrayBlockingQueue;
