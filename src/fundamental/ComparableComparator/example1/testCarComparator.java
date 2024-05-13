@@ -1,4 +1,4 @@
-package fundamental.ComparableComparator;
+package fundamental.ComparableComparator.example1;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package fundamental.ComparableComparator;
+package fundamental.ComparableComparator.example1;
 
 
 public class testCar implements Comparable<testCar>{
