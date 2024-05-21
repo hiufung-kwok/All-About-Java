@@ -1,4 +1,4 @@
-package algorithm.graph;
+package algorithm.graph.dijkstra;
 
 import java.util.*;
 
@@ -28,6 +28,7 @@ class DijkstraAlgorithm {
 
         while (!pq.isEmpty()) {
             Node node = pq.poll();
+            System.out.println("Processing: " + node.vertex);
             int u = node.vertex;
 
             if (visited[u]) continue;
@@ -58,7 +59,7 @@ class DijkstraAlgorithm {
                 {30, 0, 20, 0, 60},
                 {100, 0, 10, 60, 0},
         };
-        int source = 0;
+        int source = 2;
         dijkstra(graph, source);
     }
 }
