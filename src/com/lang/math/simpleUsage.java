@@ -1,4 +1,4 @@
-package com.math;
+package com.lang.math;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
@@ -12,7 +12,7 @@ import org.apache.commons.lang3.StringUtils;
  * @author andykwok
  *
  */
-public class simpleUage {
+public class simpleUsage {
 	
 	
 	public static void normalOperation () {

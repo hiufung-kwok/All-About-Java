@@ -15,7 +15,7 @@ in certain concept let say concurrent programming and start to learn:
 * [Com](./src/com):   
     Which is a 1 to 1 mapping to original src code. Let say wanna know more BigDecimal
     which having **java.math.BigDecimal** as package name. Then the relavant Src code example
-    would be placed under the idential package path which is **com.math.simpleUsage**.
+    would be placed under the idential package path which is **com.lang.math.simpleUsage**.
 * [Design-Pattern](./src/designPattern):   
     Varies implementation of software pattern.
 * [Fundamental](./src/fundamental):   
