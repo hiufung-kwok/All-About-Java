@@ -4,13 +4,12 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
+import java.time.Duration;
+
 public class EmbeddedSparkExampleTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // Initialize Spark session
-        SparkSession spark = SparkSession.builder()
-                .appName("Embedded Spark Example")
-                .master("local[*]")
-                .getOrCreate();
+        SparkSession spark = EmbeddedSparkUtil.getTestSession();
 
         // Interact with Spark
         // Example: Create a DataFrame from a collection and perform operations
@@ -30,6 +29,11 @@ public class EmbeddedSparkExampleTest {
         // Run an SQL query
         Dataset<Row> sqlDF = spark.sql("SELECT name, age FROM people WHERE age > 30");
         sqlDF.show();
+
+        Object testResult = sqlDF.collect();
+
+
+//        Thread.sleep(Duration.ofMinutes(20));
 
         // Stop the Spark session
         spark.stop();
