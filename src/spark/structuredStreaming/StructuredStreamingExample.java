@@ -1,4 +1,4 @@
-package spark.streaming;
+package spark.structuredStreaming;
 
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.Dataset;
