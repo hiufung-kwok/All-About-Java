@@ -19,7 +19,7 @@ public class SimpleSparkStreaming {
         // Create a local StreamingContext with two working threads and a batch interval of 1 second
         SparkConf conf = new SparkConf().setMaster("local[2]").setAppName("SimpleSparkStreaming");
         JavaStreamingContext jssc = new JavaStreamingContext(conf, Durations.seconds(1));
-
+        
 
         // Create a DStream that will connect to hostname:port
         JavaReceiverInputDStream<String> lines = jssc.socketTextStream("localhost", 9999);
