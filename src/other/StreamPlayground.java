@@ -3,6 +3,7 @@ package other;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -85,6 +86,11 @@ public class StreamPlayground {
                 .filter(n -> n < 5)
                 .collect(Collectors.toList()); // [1, 2, 3, 4]
         System.out.println(filtered);
+
+
+        Map<Boolean, List<Integer>> partitioned = numbersNine.stream()
+                .collect(Collectors.partitioningBy(n -> n % 2 == 0));
+
 
 
 
