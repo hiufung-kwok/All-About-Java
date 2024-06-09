@@ -1,5 +1,6 @@
 package other;
 
+import java.util.Comparator;
 import java.util.stream.IntStream;
 
 public class StringPlayground {
@@ -56,6 +57,10 @@ public class StringPlayground {
 
         String oneString = String.join(", ", "a", "b", "c"); // "a, b, c"
 
+        // Can't
+//        String [] oneTest = {"apple", "banana", "cherry", "date", "elderberry"};
+//        String oneStringFromArray = String.join(oneTest);
+
         System.out.println(hello.indexOf("llo"));
 
         // Builder is faster, but not threat-safe
@@ -111,6 +116,12 @@ public class StringPlayground {
         boolean endsWith = "Hello".endsWith("lo");
 
 
+        // Same.
+        System.out.println(hello.substring(7).startsWith("World"));
+        System.out.println(hello.startsWith("World", 7));
+
+        CharSequence cs = hello.subSequence(1, 4);
+        System.out.println(cs);
 
 
 

@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -92,7 +93,15 @@ public class StreamPlayground {
                 .collect(Collectors.partitioningBy(n -> n % 2 == 0));
 
 
+        List<String> words = Arrays.asList("apple", "banana", "cherry", "date");
+        Map<Integer, List<String>> groupedByLength = words.stream()
+                .collect(Collectors.groupingBy(String::length)); // {5=[apple], 6=[banana, cherry], 4=[date]}
 
+        // Combining with other collectors
+        Map<Integer, Long> countByLength = words.stream()
+                .collect(Collectors.groupingBy(String::length, Collectors.counting())); // {5=1, 6=2, 4=1}
+
+        System.out.println(countByLength);
 
     }
 }
