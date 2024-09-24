@@ -12,9 +12,11 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.WeakHashMap;
 
 public class Test {
     public static void main(String[] args) {
@@ -34,24 +36,37 @@ public class Test {
 //        System.out.println();
 //
 //        LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant();
+//
+//        List<Integer> numList = List.of(1,1,1,2,3,4,5);
+//        System.out.println(numList.stream()
+//                .distinct()
+//                .map(x -> x*x)
+//                .skip(1)
+//                .reduce(Integer::sum).get());
+//
+//        System.out.println(numList.stream()
+//                .min(Comparator.naturalOrder())
+//                .get());
+//
+//        Optional<String> str = Optional.of("test");
+//        str.ifPresent(System.out::println);
+//
+//
 
-        List<Integer> numList = List.of(1,1,1,2,3,4,5);
-        System.out.println(numList.stream()
-                .distinct()
-                .map(x -> x*x)
-                .skip(1)
-                .reduce(Integer::sum).get());
 
-        System.out.println(numList.stream()
-                .min(Comparator.naturalOrder())
-                .get());
+        String h = "Hello";
+        String w = " world";
 
-        Optional<String> str = Optional.of("test");
-        str.ifPresent(System.out::println);
+        int num = 1234;
+
+//        System.out.println(h.substring(1));
+        System.out.println(String.valueOf(num).substring(0, 2));
 
 
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
-
+        System.out.println(h.concat(w));
+        Map<Integer, Integer> weakhashMap = new WeakHashMap<>();
 
     }
 }
